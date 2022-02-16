@@ -38,7 +38,7 @@
 		7FFA8E9C0816CCCA00A858CD /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
 		7FFA8E9D0816CCCA00A858CD /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1AC9740486D14A00FE50C9 /* OmniFocus Module.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OmniFocus Module.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1AC9740486D14A00FE50C9 /* OmniFocus Module.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OmniFocus Module.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		E1EAB045068128A200774DFF /* QSOmniFocusPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSOmniFocusPlugIn.m; sourceTree = "<group>"; };
 		E1EAB047068128A800774DFF /* QSOmniFocusPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSOmniFocusPlugIn.h; sourceTree = "<group>"; };
@@ -92,13 +92,14 @@
 				14DE918A10D0C7B400851A6F /* QSPlugIn.xcconfig */,
 				14DE918B10D0C7B400851A6F /* Release.xcconfig */,
 			);
-			path = Configuration;
-			sourceTree = QS_SOURCE_ROOT;
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 		1ED78706FE9D4A0611CA0C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1AC9740486D14A00FE50C9 /* OmniFocus Module.qsplugin */,
+				8D1AC9740486D14A00FE50C9 /* OmniFocus Module.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,7 +166,7 @@
 			name = QSOmniFocusPlugIn;
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = QSOmniFocusPlugIn;
-			productReference = 8D1AC9740486D14A00FE50C9 /* OmniFocus Module.qsplugin */;
+			productReference = 8D1AC9740486D14A00FE50C9 /* OmniFocus Module.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -173,9 +174,16 @@
 /* Begin PBXProject section */
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 7F6B3EEF085CE8DF000735A8 /* Build configuration list for PBXProject "QSOmniFocusPlugIn" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
 			mainGroup = 0259C574FE90428111CA0C5A /* QSOmniFocusPlugIn */;
 			projectDirPath = "";
 			projectRoot = "";
